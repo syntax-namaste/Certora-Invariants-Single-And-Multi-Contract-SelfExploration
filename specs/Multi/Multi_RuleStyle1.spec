@@ -7,6 +7,7 @@ methods {
     sec.getValueSecond() returns(uint256) envfree;
 }
 
+// will pass
 rule arbitRule(env e, uint256 x) {
     require sec.getValueSecond() == 52;
     changeValue(e, x);
